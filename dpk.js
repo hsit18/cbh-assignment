@@ -11,8 +11,6 @@ const generateHash = (key) => {
 };
 
 exports.deterministicPartitionKey = (event) => {
-  let candidate;
-
   //if no event then return TRIVIAL_PARTITION_KEY
   if (!event) {
     return TRIVIAL_PARTITION_KEY;
